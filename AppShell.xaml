@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp_TARgv24_.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp_TARgv24_"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MauiApp_TARgv24_">
+    
+    <Shell.TitleView>
+        <Label
+            Text="Näidised"
+            FontFamily="StoryScript-Regular"
+            FontSize="Title"
+            TextColor="#04303d"
+            VerticalTextAlignment="Center"
+            VerticalOptions="Center"
+            Padding="25,25,25,0"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            />
+    </Shell.TitleView>
+
+    <ShellContent
+        Title="Avaleht"
+        ContentTemplate="{DataTemplate local:StartPage}"
+        Route="StartPage" />
+
+</Shell>
